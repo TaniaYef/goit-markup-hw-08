@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 32px;
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button {
+  &:hover,
+  &:focus {
+    background-color: #1c89e2;
+  }
+}
+
+.btn-text {
+  display: flex;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 0;
+  align-self: center;
+  text-align: center;
+  margin: 0px;
+  color: #ffffff;
+}

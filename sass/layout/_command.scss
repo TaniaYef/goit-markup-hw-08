@@ -1,0 +1,106 @@
+.command {
+  background-color: #f5f4fa;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+
+.command__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.command-list {
+  .command-list__item {
+    background-color: #ffffff;
+    width: 450px;
+    // margin-right: auto;
+    // margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+}
+
+.command-list {
+  margin-bottom: -30px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+  }
+}
+
+.command-list {
+  .command-list__item {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      width: calc(100% / 2 - 30px);
+      margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc(100% / 4 - 30px);
+    }
+  }
+}
+
+// .command-list {
+//   .command-list__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+
+.command-list {
+  .command-list__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+}
+
+.command-list__crewman {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.command-list__specification {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--content-text-color);
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
