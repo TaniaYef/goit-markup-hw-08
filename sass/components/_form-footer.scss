@@ -1,10 +1,18 @@
 .container-footer-subscribe {
-  margin-left: 105px;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    // margin-left: 105px;
+  }
 }
 
 .footer-subscribe {
   &__label {
-    display: flex;
+    display: block;
+    text-align: center;
+    // display: flex;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -16,7 +24,17 @@
     margin-top: 0;
   }
   &__input {
-    width: 358px;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -26,15 +44,22 @@
     color: #ffffff;
   }
   &__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 12px;
+    }
 
     width: 200px;
     height: 50px;
     border: 0;
     border-radius: 4px;
-    margin-left: 12px;
+
     padding: 10px 29px 10px 10px;
     background-color: var(--accent-text-color);
     cursor: pointer;
@@ -44,12 +69,18 @@
   }
 }
 
-
 .subscribe-online {
-  display: flex;
-  align-items: center;
-}
+  display: block;
 
+  // @media screen and (min-width: 1200px) {
+
+  // }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
 
 .footer-subscribe__button {
   &:hover,
