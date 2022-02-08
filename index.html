@@ -17,9 +17,14 @@
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="main-nav container">
             <a href="./index.html" class="link-logo"><span class="logo">Web</span><span class="logo-b">Studio</span></a>
+            <button type="button" class="menu-open__btn" data-menu-open>
+                <svg class="menu-open" width="24px" height="16px">
+                    <use href="./images/icons.svg#menu"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="site-nav list">
                     <li class="site-nav__item">
@@ -49,8 +54,55 @@
                 </li>
             </ul>
         </div>
+        
         </div>
-    </header> -->
+        <div class="mob-menu is-hidden"  data-menu>
+            <div class="container container-menu">
+                <div class="mob-menu__top">
+            <button type="button" class="menu-close__btn" data-menu-close><svg class="close" width="18px" height="18px">
+                <use href="./images/icons.svg#vector"></use>
+            </svg></button>
+            <ul class="mob-menu-list list">                
+                <li class="mob-menu-list__item">
+                    <a href="./index.html" class="link ">Студия</a>
+                </li>
+                <li class="mob-menu-list__item">
+                    <a href="./portfolio.html" class="link">Портфолио</a>
+                </li>
+                <li class="mob-menu-list__item">
+                    <a href="#" class="link">Контакты</a>
+                </li>
+            </ul>
+            </div>
+            <div class="mob-menu__bottom">
+            <div class="mob-registration">
+                <ul class="mob-auth-nav list">
+                    <li class="mob-auth-nav__item">
+                        <a href="tel:+380961111111" class="mob-auth-nav__link">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-auth-nav__item">
+                        <a class="mob-auth-nav__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>                    
+                </ul>
+            </div>
+            <ul class="list mob-social">
+                <li class="mob-social__item">
+                    <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mob-social__item">
+                    <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mob-social__item">
+                    <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mob-social__item">
+                    <a class="link mob-social__link" href="" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+            </div>
+        </div>
+    </header>
 
     <main>
 
@@ -125,24 +177,43 @@
                     <li class="services-list__item">
                         
                         <a href="#" class="services-list__link ">
-                            <img src="./images/img1.jpg" alt="Разработчик набирает код"
-                                width="370">                        
+                            <picture>
+                                <source srcset="./images/img1.jpg 1x, ./images/img-1-2x.jpg 2x" media="(min-width: 1200px)" />
+                            
+                                <img src="./images/img1.jpg" alt="Разработчик тестирует программу" />
+                            
+                            </picture>
+                            <!-- <img src="./images/img1.jpg" alt="Разработчик набирает код"
+                                width="370">                         -->
                             <p class="services-list__name">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
                         </a>
                         
                     </li>
 
                     <li class="services-list__item">
-                        <a href="#" class="services-list__link">
-                            <img src="./images/img2.jpg" alt="Разработчик тестирует программу"
-                                width="370">
+                        <a href="#" class="services-list__link">                           
+                            <picture>
+                                <source srcset="./images/img2.jpg 1x, ./images/img-2-2x.jpg 2x" media="(min-width: 1200px)" />
+
+                                <img src="./images/img2.jpg" alt="Разработчик тестирует программу" />
+                                
+                            </picture>
+                            <!-- <img src="./images/img2.jpg" alt="Разработчик тестирует программу"
+                                width="370"> -->
                             <p class="services-list__name">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
                         </a>
                     </li>
 
                     <li class="services-list__item">
-                        <a href="#" class="services-list__link"><img src="./images/img3.jpg" alt="Разработчик подбирает цвет"
-                                width="370">
+                        <a href="#" class="services-list__link">
+                            <picture>
+                                <source srcset="./images/img3.jpg 1x, ./images/img-3-2x.jpg 2x" media="(min-width: 1200px)" />
+                            
+                                <img src="./images/img3.jpg" alt="Разработчик тестирует программу" />
+                            
+                            </picture>
+                            <!-- <img src="./images/img3.jpg" alt="Разработчик подбирает цвет"
+                                width="370"> -->
                             <p class="services-list__name">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                         </a>
                     </li>
@@ -471,7 +542,7 @@
         </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
                 <svg class="close" width="11px" height="11px"><use href="./images/icons.svg#vector"></use></svg>
@@ -520,7 +591,8 @@
     
 
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
