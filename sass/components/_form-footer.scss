@@ -12,6 +12,11 @@
   &__label {
     display: block;
     text-align: center;
+
+    @media screen and (min-width: 1200) {
+      text-align: start;
+    }
+
     // display: flex;
     font-style: normal;
     font-weight: 700;

@@ -1023,6 +1023,12 @@ img {
   margin-top: 0;
 }
 
+@media screen and (min-width: 1200) {
+  .footer-subscribe__label {
+    text-align: start;
+  }
+}
+
 .footer-subscribe__input {
   display: block;
   width: 100%;
@@ -1136,7 +1142,6 @@ img {
 .modal {
   position: absolute;
   padding: 40px;
-  max-width: 450px;
   max-height: 609px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -1157,7 +1162,7 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
+    height: 581px;
   }
 }
 
