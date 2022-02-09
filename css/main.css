@@ -65,6 +65,7 @@ button {
     display: flex;
     align-items: center;
     margin-top: 32px;
+    max-height: 80px;
   }
 }
 
