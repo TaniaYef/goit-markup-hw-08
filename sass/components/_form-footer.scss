@@ -11,10 +11,10 @@
 .footer-subscribe {
   &__label {
     display: block;
-    text-align: center;
+    // text-align: center;
 
-    @media screen and (min-width: 1200) {
-      text-align: start;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
     }
 
     // display: flex;

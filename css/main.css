@@ -1011,7 +1011,6 @@ img {
 
 .footer-subscribe__label {
   display: block;
-  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -1023,9 +1022,9 @@ img {
   margin-top: 0;
 }
 
-@media screen and (min-width: 1200) {
+@media screen and (max-width: 1199px) {
   .footer-subscribe__label {
-    text-align: start;
+    text-align: center;
   }
 }
 
