@@ -538,6 +538,12 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list {
+    margin-bottom: -30px;
+  }
+}
+
 .benefits-list .benefits-list__item {
   margin-left: 30px;
 }
@@ -574,6 +580,12 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--content-text-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .benefits-list__text {
+    margin-bottom: 30px;
+  }
 }
 
 .services {
