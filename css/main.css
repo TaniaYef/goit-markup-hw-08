@@ -280,6 +280,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   top: 10px;
   right: 15px;
   cursor: pointer;
@@ -386,6 +387,7 @@ button {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 @media screen and (min-width: 480px) {
@@ -690,15 +692,23 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .command-list .command-list__item {
+    height: 622px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .command-list .command-list__item {
     width: 354px;
+    height: 536px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-list .command-list__item {
     width: 270px;
+    height: 428px;
   }
 }
 
@@ -1281,6 +1291,13 @@ img {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1199px) {
+  .check-b {
+    font-size: 11px;
+    line-height: 1.16;
+  }
+}
+
 .check-online {
   display: flex;
   align-items: center;
@@ -1303,6 +1320,13 @@ img {
 .agreement {
   color: var(--accent-text-color);
   margin-left: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .agreement {
+    font-size: 11px;
+    line-height: 1.16;
+  }
 }
 
 .check-b span {
