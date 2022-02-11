@@ -696,15 +696,23 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .command-list .command-list__item {
+    height: 622px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .command-list .command-list__item {
     width: 354px;
+    height: 536px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .command-list .command-list__item {
     width: 270px;
+    height: 428px;
   }
 }
 
